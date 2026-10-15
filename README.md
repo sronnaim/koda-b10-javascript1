@@ -2,6 +2,13 @@
 
 ## Membuat Program Hitung Luas dan Keliling Lingkaran
 
+### Circle object shape
+
+1. `circle.r` is the circle radius
+2. `circle.getPi()` gets Pi value based off r
+3. `circle.printArea()` prints circle area
+4. `circle.printCircum()` prints circle circumference
+
 ### Flowchart
 
 ```mermaid

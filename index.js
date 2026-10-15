@@ -1,31 +1,20 @@
-// Impure
-const r = 144
-let pi
+const circle = {
+    r: 144,
+    getPi: function() {
+        if (this.r % 7 === 0)
+            return 22/7
 
-function printCircleAreaAndCircumImpure() {
-    if(r % 7 === 0)
-        pi = 22/7
-    else
-        pi = 3.14
-
-    console.log(pi * r * r)
-    console.log(2 * pi * r)
+        return 3.14
+    },
+    printArea: function() {
+        const pi = this.getPi()
+        console.log(pi * this.r * this.r)
+    },
+    printCircum: function() {
+        const pi = this.getPi()
+        console.log(2 * pi * this.r)
+    }
 }
 
-// Pure
-function printCircleAreaAndCircumPure(r) {
-    let pi
-
-    if (r % 7 === 0) 
-        pi = 22/7
-    else 
-        pi = 3.14
-
-    return [pi * r * r, 2 * pi * r]
-}
-
-printCircleAreaAndCircumImpure()
-
-const [area, circum] = printCircleAreaAndCircumPure(144)
-console.log(area)
-console.log(circum)
+circle.printArea()
+circle.printCircum()
