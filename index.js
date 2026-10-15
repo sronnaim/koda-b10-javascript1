@@ -1,24 +1,18 @@
-const circle = {
-    r: 144,
-    getPi: function() {
-        if (this.r % 7 === 0)
-            return 22/7
-
-        return 3.14
-    },
-    printArea: function() {
-        const pi = this.getPi()
-        console.log(pi * this.r * this.r)
-    },
-    printCircum: function() {
-        const pi = this.getPi()
-        console.log(2 * pi * this.r)
-    }
+function printAreaAndPerim(a, p) {
+    console.log(a)
+    console.log(p)
 }
 
-circle.printArea()
-circle.printCircum()
+function useCircleAreaAndCircum(r, callback) {
+    let pi
 
-circle.r = 200
-circle.printArea()
-circle.printCircum()
+    if (r % 7 === 0)
+        pi = 22/7
+    else
+        pi = 3.14
+
+
+    callback(pi * r * r, 2 * pi * r)
+}
+
+useCircleAreaAndCircum(144, printAreaAndPerim)

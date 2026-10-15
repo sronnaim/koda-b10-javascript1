@@ -2,12 +2,10 @@
 
 ## Membuat Program Hitung Luas dan Keliling Lingkaran
 
-### Circle object shape
+### Functions detail
 
-1. `circle.r` is the circle radius
-2. `circle.getPi()` gets Pi value based off r
-3. `circle.printArea()` prints circle area
-4. `circle.printCircum()` prints circle circumference
+1. `useCircleAreaAndCircum(r, callback)` calculates area and circumference from radius, executes the callback to do anything with them
+2. `printAreaAndPerim` prints both area and perimeter in two lines
 
 ### Flowchart
 
