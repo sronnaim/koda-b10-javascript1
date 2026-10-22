@@ -13,6 +13,8 @@
   "type": "module",
   "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint **/*.{js,mjs,cjs}",
+    "lint:fix": "eslint **/*.{js,mjs,cjs} --fix"
   }
 }
