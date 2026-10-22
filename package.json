@@ -1,0 +1,18 @@
+{
+  "name": "js1",
+  "version": "1.0.0",
+  "description": "1. `circle.r` is the circle radius 2. `circle.getPi()` gets Pi value based off r 3. `circle.printArea()` prints circle area 4. `circle.printCircum()` prints circle circumference",
+  "homepage": "https://github.com/sronnaim/koda-b10-javascript1#readme",
+  "bugs": {
+    "url": "https://github.com/sronnaim/koda-b10-javascript1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sronnaim/koda-b10-javascript1.git"
+  },
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
