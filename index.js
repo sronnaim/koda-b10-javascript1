@@ -18,3 +18,7 @@ const circle = {
 
 circle.printArea()
 circle.printCircum()
+
+circle.r = 200
+circle.printArea()
+circle.printCircum()
